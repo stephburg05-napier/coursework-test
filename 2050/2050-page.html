@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>2050 Scenario - Time Machine Adventures</title>
   <!-- Link to the 2050-specific CSS file -->
   <link rel="stylesheet" href="scenario-style.css">
@@ -32,7 +32,29 @@
       <p class="previous-choice">Previous Choice: [Your Last Decision]</p>
     </section>
 
-    <!-- Description / Image Area -->
+    <!-- Description / Image Area with Overlay Text -->
     <section class="description-area">
-      <!-- Reference image from the shared images folder -->
-      <img src="../images/placeholder.png" alt="Scenario Image" class="
+      <div class="image-container">
+        <img src="../images/placeholder.png" alt="Scenario Image" class="scenario-image">
+        <div class="overlay-text">
+          <p>You enter a futuristic virtual reality world. The Utopians invite you to join their peaceful society. You are promised a life of prosperity but with restrictions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choices Section -->
+    <section class="choices">
+      <div class="choice">
+        <p class="choice-text">You accept the offer, living a controlled life in blissful peace.</p>
+        <button class="choice-button" id="choice1Btn">▼</button>
+      </div>
+      <div class="choice">
+        <p class="choice-text">You reject The Utopians and join The Nomads, who promise freedom and adventure, but life is unstable and chaotic.</p>
+        <button class="choice-button" id="choice2Btn">▼</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="scenario-script.js"></script>
+</body>
+</html>
