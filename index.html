@@ -6,10 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time Machine Adventures</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Inline styles to set a unified background and text color for the landing page -->
+  <style>
+    body {
+      background-color: #2c2c2c; /* Unified dark background */
+      color: #fff;               /* White text for contrast */
+    }
+    /* Remove the white background from main content if any */
+    main {
+      background: transparent;
+    }
+  </style>
 </head>
 
 <body>
-
   <!-- Navigation Bar -->
   <header>
     <nav>
@@ -46,8 +56,10 @@
           <button class="timeline-btn">1940 - World War II</button>
         </div>
         <div class="progression-point" id="virtual-revolution">
-          <!-- 2050 button updated with onclick attribute -->
-          <button class="timeline-btn" onclick="window.location.href='2050/2050-page.html'">2050 - Virtual Revolution</button>
+          <!-- 2050 button updated with onclick attribute to link to the 2050 page -->
+          <button class="timeline-btn" onclick="window.location.href='2050/2050-page.html'">
+            2050 - Virtual Revolution
+          </button>
         </div>
         <div class="progression-point" id="space-travel">
           <button class="timeline-btn">Future - Space Traveller</button>
