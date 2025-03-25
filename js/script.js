@@ -1,7 +1,8 @@
-// Hamburger menu toggle
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
-
-hamburger.addEventListener('click', function () {
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-});
+function toggleMenu() {
+    var menu = document.getElementById("menuDropdown");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
