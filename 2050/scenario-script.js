@@ -21,17 +21,18 @@ const choice2Btn = document.getElementById("choice2Btn");
 
 choice1Btn.addEventListener("click", () => {
   alert("You chose Choice 1!");
-  // (Optional) Store this new decision in localStorage
-  localStorage.setItem('lastDecision', 'Choice 1 (Accepted VR Offer)');
-  // window.location.href = "2050-choice1.html"; // if you have a follow-up page
+  // CHANGED: Store updated decision for dead-end and redirect to the dead-end page in the child folder
+  localStorage.setItem('lastDecision', '2050 - Virtual Revolution: Choice 1 Dead End');
+  window.location.href = "2050-deadend.1/2050-deadend.1.html";
 });
 
 choice2Btn.addEventListener("click", () => {
   alert("You chose Choice 2!");
-  // (Optional) Store this new decision in localStorage
-  localStorage.setItem('lastDecision', 'Choice 2 (Joined The Nomads)');
-  // window.location.href = "2050-choice2.html"; // if you have a follow-up page
+  // CHANGED: Store updated decision for survived and redirect to the survived page in the child folder
+  localStorage.setItem('lastDecision', '2050 - Virtual Revolution: Choice 2 Survived');
+  window.location.href = "2050-survived.1/2050-survived.1.html";
 });
 
 // 3) Option A: Call retrieveLastDecision() once the DOM is loaded
 document.addEventListener('DOMContentLoaded', retrieveLastDecision);
+
