@@ -182,3 +182,37 @@ main {
   display: block !important;
 }
 
+/* Dead End Navigation Section */
+.deadend-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.nav-arrow {
+  flex: 1;
+}
+
+.left-arrow {
+  text-align: left;
+}
+
+.right-arrow {
+  text-align: right;
+}
+
+.nav-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+
