@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2050-survived.1 - Time Machine Adventures</title>
-  <!-- Link to the 2050-specific CSS file (in the parent folder) -->
+  <!-- Link to the CSS file in the parent folder -->
   <link rel="stylesheet" href="../scenario-style.css">
 </head>
 <body onload="retrieveLastDecision()">
@@ -49,11 +49,22 @@
           The revolution succeeds; however, you and your friends are erased from the digital world.
         </p>
         <button class="choice-button" id="option1Btn"
-          onclick="localStorage.setItem('lastDecision', '2050-survived.1: Choice 1 -> Dead End'); window.location.href='2050-deadend.2.html';">
+          onclick="localStorage.setItem('lastDecision', '2050-survived.1: Choice 1 -> Dead End'); window.location.href='2050-deadend.2/2050-deadend.2.html';">
           ▼
         </button>
       </div>
       <div class="choice">
         <p class="choice-text">
-          You try to make peace between The Utopians and The
+          You try to make peace between The Utopians and The Nomads, attempting to blend the two worlds.
+        </p>
+        <button class="choice-button" id="option2Btn"
+          onclick="localStorage.setItem('lastDecision', '2050-survived.1: Choice 2 -> Survived'); window.location.href='2050-survived.2/2050-survived.2.html';">
+          ▼
+        </button>
+      </div>
+    </section>
+  </main>
 
+  <script src="../scenario-script.js"></script>
+</body>
+</html>
