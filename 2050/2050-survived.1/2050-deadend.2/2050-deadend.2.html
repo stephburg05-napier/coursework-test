@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2050-deadend.2 - Time Machine Adventures</title>
   <!-- Link to the CSS file in the same folder -->
-  <link rel="stylesheet" href="scenario-style.css">
+  <link rel="stylesheet" href="../scenario-style.css">
 </head>
 <body onload="retrieveLastDecision()">
   <!-- Header / Navigation Bar -->
@@ -35,7 +35,7 @@
     <section class="description-area">
       <div class="image-container">
         <!-- Adjust the image path if your images folder is in the parent folder -->
-        <img src="images/placeholder.png" alt="Scenario Image" class="scenario-image">
+        <img src="images/placeholder.png" alt="Scenario Image" class="../scenario-image">
         <div class="overlay">
           <p>The revolution succeeds; however, you and your friends are erased from the digital world.</p>
         </div>
@@ -45,18 +45,18 @@
     <section class="deadend-navigation">
       <div class="nav-arrow left-arrow">
         <!-- Back to previous choice: since this new page is in 2050-survived.1, and the previous branch page is 2050-survived.1.html -->
-        <button class="nav-button" onclick="window.location.href='2050-survived.1.html'">
+        <button class="nav-button" onclick="window.location.href='../2050-survived.1.html'">
           &larr; Back to previous choice
         </button>
       </div>
       <div class="nav-arrow right-arrow">
         <!-- Back to timeline: go up two levels from 2050-survived.1 to the root -->
-        <button class="nav-button" onclick="window.location.href='../../index.html'">
+        <button class="nav-button" onclick="window.location.href='../../../index.html'">
           Back to timeline &rarr;
         </button>
       </div>
     </section>
   </main>
-  <script src="scenario-script.js"></script>
+  <script src="../../scenario-script.js"></script>
 </body>
 </html>
